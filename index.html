@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/solar/bootstrap.min.css">
+    <title>Http Request</title>
+    <style>
+        img {
+            display: block;
+        }
+    </style>
+</head>
+
+<body class="container">
+    <section class="text-center">
+        <h1>Weather Now</h1>
+        <form class="form-horizontal">
+            <fieldset>
+                <Legend>Quel temps fait-il à …</Legend>
+
+                <div class="form-group" id="countryInput">
+                    <div>
+                        <input autofocus type="text" class="form-control text-center" id="country" placeholder="Entrez le code du pays (fr, uk, de...)">
+                    </div>
+                </div>
+                <div class="form-group" id="countrySubmit">
+                    <div>
+                        <button id="btn" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+
+                <div class="form-group" id="townInput" style="display : none">
+                    <div>
+                        <input autofocus type="text" class="form-control text-center" id="town" placeholder="Entrez le nom de la ville">
+                    </div>
+                </div>
+                <div class="form-group" id="townSubmit" style="display : none">
+                    <div>
+                        <button id="btn" class="btn btn-primary">Submit</button>
+                    </div>
+                </div>
+            </fieldset>
+        </form>
+    </section>
+
+    <section class="text-center" id="weather">
+
+    </section>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
