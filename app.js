@@ -154,6 +154,7 @@ sont déjà affichées, le cas échéant les effacent,
 et peuple la section weather du html dynamiquement 
 avec des éléments créés à la volée et les données de l'api;*/
 function showWeather(weather) {
+    let weatherDiv = document.querySelector('#weather');
     if (weatherDiv.childNodes.length > 1) {
         weatherDiv.innerHTML = '';
     }
@@ -168,7 +169,6 @@ function showWeather(weather) {
     cond.innerText = condText.toUpperCase();
 
     let elements = [town, temp, cond, weatherImg, weatherLogo];
-    let weatherDiv = document.querySelector('#weather');
     
     for (let i = 0; i < elements.length; i++) {
         weatherDiv.appendChild(elements[i]);
